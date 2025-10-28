@@ -1,18 +1,10 @@
-// src/views/index.js
-import home from './home.js';
-import sobre from './sobre.js';
-import proyectos from './proyectos.js';
-import contacto from './contacto.js';
-import tipografia from './tipografia.js'; // Añade esto
-import notFound from './404.js';
-import componentes from './componentes.js';
-
+// demo/src/views/index.js
 export const views = {
-	'/': home,
-	'/sobre': sobre,
-	'/proyectos': proyectos,
-	'/contacto': contacto,
-	'/tipografia': tipografia, 
-    '/componentes': componentes, 
-	404: notFound,
+	'/': { templateId: 'view-home', templateUrl: './src/views/home.html' },
+	'/about': { templateId: 'view-about', templateUrl: './src/views/about.html' },
+	'/projects': { templateId: 'view-projects', templateUrl: './src/views/projects.html' },
+	'/contact': { templateId: 'view-contact', templateUrl: './src/views/contact.html' },
+	'/component': { templateId: 'view-component', templateUrl: './src/views/component.html' },
+	'/tipografy': { templateId: 'view-tipografy', templateUrl: './src/views/tipografy.html' },
+	404: { templateId: 'view-404', templateUrl: './src/views/404.html' },
 };
