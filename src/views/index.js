@@ -6,5 +6,6 @@ export const views = {
 	'/contact': { templateId: 'view-contact', templateUrl: './src/views/contact.html' },
 	'/component': { templateId: 'view-component', templateUrl: './src/views/component.html' },
 	'/tipografy': { templateId: 'view-tipografy', templateUrl: './src/views/tipografy.html' },
+	'/buttons': { templateId: 'view-buttons', templateUrl: './src/views/buttons.html' },
 	404: { templateId: 'view-404', templateUrl: './src/views/404.html' },
 };
