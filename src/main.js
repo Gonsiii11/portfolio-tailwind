@@ -1,9 +1,14 @@
 // demo/src/main.js
 
+
 import { SimpleRouter } from './router.js';
+import './scroll.js';
+import { initNavigation } from './scroll.js';
 import './style.css';
 import { views } from './views/index.js';
 
+
+initNavigation();
 
 new SimpleRouter(views);
 
