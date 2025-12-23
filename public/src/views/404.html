@@ -1,11 +1,51 @@
 <template id="view-404">
-	<section class="py-16">
-		<div class="container mx-auto px-4 text-center">
-			<h1 class="text-4xl font-bold text-gray-900 mb-6">Page Not Found</h1>
-			<p class="text-xl text-gray-600 mb-8">The page you're looking for doesn't exist.</p>
-			<a href="#/" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-				Go Home
-			</a>
-		</div>
-	</section>
+    <section class="min-h-screen min-w-screen flex items-center justify-center relative overflow-hidden bg-background">
+        
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse"></div>
+            <div class="absolute top-1/4 right-1/4 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
+            <div class="relative inline-block mb-8" data-animate="fade-up">
+                <h1 class="text-[10rem] md:text-[14rem] font-bold leading-none select-none opacity-10 font-display">
+                    404
+                </h1>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span class="text-5xl md:text-7xl font-bold gradient-text">Error</span>
+                </div>
+            </div>
+
+            <div data-animate="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    Página no encontrada
+                </h2>
+                <p class="text-lg text-muted-foreground mb-10 font-body">
+                    Parece que te has aventurado en una ruta que aún no ha sido programada o el enlace ha dejado de existir.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center" data-animate="fade-up">
+                <a href="#/" 
+                   class="px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/25 flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Volver al Inicio
+                </a>
+                
+                <a href="#contact" 
+                   class="px-8 py-4 border border-border bg-card/50 backdrop-blur-sm text-foreground font-semibold rounded-xl transition-all hover:bg-muted">
+                    Reportar error
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-10 text-xs font-mono text-muted-foreground/20 hidden lg:block select-none">
+            <p>while (pageNotFound) {</p>
+            <p class="ml-4">searchAlternative();</p>
+            <p class="ml-4">keepCreating();</p>
+            <p>}</p>
+        </div>
+    </section>
 </template>
