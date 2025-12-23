@@ -4,7 +4,7 @@
 import { SimpleRouter } from './router.js';
 import './scroll.js';
 import { initNavigation } from './scroll.js';
-import './style.css';
+import './styles/style.css';
 import { views } from './views/index.js';
 
 
@@ -84,6 +84,37 @@ function bindInteractions(app) {
 		} finally {
 			submitBtn?.removeAttribute('disabled');
 		}
+	});
+}
+
+
+const btn = document.getElementById('menu-toggle');
+const menu = document.getElementById('mobile-menu');
+const icon = document.getElementById('menu-icon');
+
+// Rutas de los iconos (Hamburguesa y X)
+const pathMenu = "M4 6h16M4 12h16M4 18h16";
+const pathClose = "M6 18L18 6M6 6l12 12";
+
+if (btn && menu) {
+	btn.onclick = () => {
+		const isHidden = menu.classList.toggle('hidden');
+
+		// Cambiar el icono según el estado
+		if (isHidden) {
+			icon.setAttribute('d', pathMenu);
+		} else {
+			icon.setAttribute('d', pathClose);
+		}
+	};
+
+	// Cerrar al pulsar cualquier link
+	const links = menu.querySelectorAll('a');
+	links.forEach(link => {
+		link.onclick = () => {
+			menu.classList.add('hidden');
+			icon.setAttribute('d', pathMenu);
+		};
 	});
 }
 
