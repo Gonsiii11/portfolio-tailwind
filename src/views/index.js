@@ -17,9 +17,10 @@ export const views = {
 			cleanupScrollView();
 		},
 	},
-	'/scroll': {
-		templateId: 'view-scroll',
-		templateUrl: `${BASE_URL}src/views/scroll.html`,
+	'/proyect': {
+
+		templateId: 'view-proyect',
+		templateUrl: `${BASE_URL}src/views/proyect.html`,
 		onMount: (container) => {
 			// Initialize scroll animations when view is mounted
 			initScrollView(container);
@@ -28,12 +29,19 @@ export const views = {
 			// Cleanup scroll animations when navigating away
 			cleanupScrollView();
 		},
+
 	},
-	'/about': { templateId: 'view-about', templateUrl: `${BASE_URL}src/views/about.html` },
-	'/projects': { templateId: 'view-projects', templateUrl: `${BASE_URL}src/views/projects.html` },
-	'/contact': { templateId: 'view-contact', templateUrl: `${BASE_URL}src/views/contact.html` },
-	'/component': { templateId: 'view-component', templateUrl: `${BASE_URL}src/views/component.html` },
-	'/tipografy': { templateId: 'view-tipografy', templateUrl: `${BASE_URL}src/views/tipografy.html` },
-	'/buttons': { templateId: 'view-buttons', templateUrl: `${BASE_URL}src/views/buttons.html` },
-	404: { templateId: 'view-404', templateUrl: `${BASE_URL}src/views/404.html` },
+	404: {
+		templateId: 'view-404',
+		templateUrl: `${BASE_URL}src/views/404.html`,
+		onMount: (container) => {
+			// Initialize scroll animations when view is mounted
+			initScrollView(container);
+		},
+		onUnmount: () => {
+			// Cleanup scroll animations when navigating away
+			cleanupScrollView();
+		},
+
+	}
 }

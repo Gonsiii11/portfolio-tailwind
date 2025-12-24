@@ -1,0 +1,210 @@
+<template id="view-proyect">
+    <main class="bg-background">
+        <section id="hero"
+            class="relative min-h-[60vh] min-w-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900">
+            <div class="absolute inset-0">
+                <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse">
+                </div>
+            </div>
+
+            <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+                <span
+                    class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-primary uppercase bg-primary/10 rounded-full border border-primary/20"
+                    data-animate="fade-up">
+                    Selected Works
+                </span>
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 font-display" data-animate="fade-up">
+                    Digital <span class="gradient-text">Showcase</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-body" data-animate="fade-up">
+                    Una colección de soluciones digitales donde el diseño se encuentra con la ingeniería de alto
+                    rendimiento.
+                </p>
+            </div>
+
+            <div
+                class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground/50 text-xs uppercase tracking-widest">
+                <div class="w-[1px] h-12 bg-gradient-to-b from-primary to-transparent"></div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+
+                <div class="flex flex-wrap justify-center gap-4 mb-20" data-animate="fade-up">
+                    <button
+                        class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm transition-all shadow-lg shadow-primary/20">All
+                        Projects</button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">UI/UX
+                        Design</button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">Web
+                        Apps</button>
+                    <button
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">Mobile</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
+
+                    <article class="project-card group relative flex flex-col space-y-6" data-animate="fade-up">
+                        <div
+                            class="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-border/50 bg-card">
+                            <img src="https://picsum.photos/1200/800?random=1" alt="Project 1"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <span
+                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    Case Study</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start px-2">
+                            <div>
+                                <h3 class="text-3xl font-bold group-hover:text-primary transition-colors">E-Commerce
+                                    Revolution</h3>
+                                <p class="text-muted-foreground mt-2 font-body text-lg">Plataforma de ventas con Next.js
+                                    y Stripe Integration.</p>
+                                <div class="flex gap-3 mt-4">
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Next.js</span>
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Tailwind</span>
+                                </div>
+                            </div>
+                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2024</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card group  relative flex flex-col space-y-6 md:translate-y-20"
+                        data-animate="fade-up">
+                        <div
+                            class="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-border/50 bg-card">
+                            <img src="https://picsum.photos/1200/800?random=2" alt="Project 2"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <span
+                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    Project</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start px-2">
+                            <div>
+                                <h3 class="text-3xl font-bold -hover:text-primary transition-colors">AI Dashboard</h3>
+                                <p class="text-muted-foreground mt-2 font-body text-lg">Panel de análisis de datos con
+                                    modelos de OpenAI.</p>
+                                <div class="flex gap-3 mt-4">
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">React</span>
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">FastAPI</span>
+                                </div>
+                            </div>
+                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2023</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card group relative flex flex-col space-y-6" data-animate="fade-up">
+                        <div
+                            class="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-border/50 bg-card">
+                            <img src="https://picsum.photos/1200/800?random=3" alt="Project 3"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <span
+                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">Live
+                                    Demo</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start px-2">
+                            <div>
+                                <h3 class="text-3xl font-bold group-hover:text-primary transition-colors">Mobile Fitness
+                                    App</h3>
+                                <p class="text-muted-foreground mt-2 font-body text-lg">App nativa para seguimiento de
+                                    entrenamientos.</p>
+                                <div class="flex gap-3 mt-4">
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">React
+                                        Native</span>
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Firebase</span>
+                                </div>
+                            </div>
+                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2024</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card group  relative flex flex-col space-y-6 md:translate-y-20"
+                        data-animate="fade-up">
+                        <div
+                            class="relative aspect-[16/10] overflow-hidden rounded-[2rem] border border-border/50 bg-card">
+                            <img src="https://picsum.photos/1200/800?random=4" alt="Project 4"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                            <div
+                                class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
+                                <span
+                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">Live
+                                    Demo</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-start px-2">
+                            <div>
+                                <h3 class="text-3xl font-bold -hover:text-primary transition-colors">Real Estate App
+                                </h3>
+                                <p class="text-muted-foreground mt-2 font-body text-lg">Buscador inteligente de
+                                    propiedades.</p>
+                                <div class="flex gap-3 mt-4">
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Vue.js</span>
+                                    <span
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Node.js</span>
+                                </div>
+                            </div>
+                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2023</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 border-y border-border/50 bg-card/20 backdrop-blur-sm">
+            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+                    <div data-animate="fade-up">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">40+</div>
+                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Websites Created</div>
+                    </div>
+                    <div data-animate="fade-up">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">12+</div>
+                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Mobile Apps</div>
+                    </div>
+                    <div data-animate="fade-up">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">99%</div>
+                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Code Quality</div>
+                    </div>
+                    <div data-animate="fade-up">
+                        <div class="text-4xl md:text-5xl font-bold mb-2">5+</div>
+                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 lg:py-32">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-6xl font-bold mb-8" data-animate="fade-up">¿Interesado en trabajar juntos?
+                </h2>
+                <p class="text-xl text-muted-foreground mb-12" data-animate="fade-up">Siempre estoy buscando retos
+                    interesantes y colaboraciones creativas.</p>
+                <div data-animate="fade-up">
+                    <a href="#/contact"
+                        class="px-12 py-5 bg-primary text-primary-foreground font-bold rounded-2xl hover:scale-105 hover:shadow-2xl hover:shadow-primary/30 transition-all inline-block">
+                        Empezar un Proyecto
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+</template>
