@@ -6,7 +6,7 @@
 @layer base {
 	:root {
 		/* ===== SURFACE COLORS ===== */
-		--color-background: #e5e7eb;
+		--color-background: #F5F3FF;
 		--color-foreground: #0f172a;
 		--color-card: #f3f4f6;
 		--color-card-foreground: var(--color-foreground);
@@ -15,7 +15,9 @@
 
 		/* ===== PRIMARY ===== */
 		/* Deep blue - 6.8:1 contrast on card */
-		--color-primary: #0052a3;
+		--color-primary: #7C3AED;
+		--color-primary-light: #8A5CF2;
+		--color-primary-dark: #4C1D95;
 		--color-primary-foreground: #ffffff;
 		--color-primary-rgb: 0, 82, 163;
 

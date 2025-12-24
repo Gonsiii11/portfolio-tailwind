@@ -1,7 +1,7 @@
 <template id="view-proyect">
     <main class="bg-background">
         <section id="hero"
-            class="relative min-h-[60vh] min-w-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900">
+            class="relative min-h-screen min-w-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 bg-primary-dark">
             <div class="absolute inset-0">
                 <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse">
                 </div>
@@ -28,21 +28,21 @@
             </div>
         </section>
 
-        <section class="py-20">
+        <section class="py-20 bg-background">
             <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
 
                 <div class="flex flex-wrap justify-center gap-4 mb-20" data-animate="fade-up">
                     <button
-                        class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm transition-all shadow-lg shadow-primary/20">All
+                        class="px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium text-sm transition-all hover:bg-primary hover:text-white shadow-lg shadow-primary/20">All
                         Projects</button>
                     <button
-                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">UI/UX
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 hover:bg-primary hover:text-white transition-all">UI/UX
                         Design</button>
                     <button
-                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">Web
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 hover:bg-primary hover:text-white transition-all">Web
                         Apps</button>
                     <button
-                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50 transition-all">Mobile</button>
+                        class="px-6 py-2 rounded-full bg-card border border-border text-muted-foreground font-medium text-sm hover:border-primary/50  hover:bg-primary hover:text-white transition-all">Mobile</button>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
@@ -55,8 +55,8 @@
                             <div
                                 class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
                                 <span
-                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
-                                    Case Study</span>
+                                    class="px-8 py-3 bg-primary text-white font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    Project</span>
                             </div>
                         </div>
                         <div class="flex justify-between items-start px-2">
@@ -67,12 +67,12 @@
                                     y Stripe Integration.</p>
                                 <div class="flex gap-3 mt-4">
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Next.js</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md">Next.js</span>
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Tailwind</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md ">Tailwind</span>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2024</span>
+                            <span class="text-base font-bold text-primary font-display">2024</span>
                         </div>
                     </article>
 
@@ -85,7 +85,7 @@
                             <div
                                 class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
                                 <span
-                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    class="px-8 py-3 bg-primary text-white font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
                                     Project</span>
                             </div>
                         </div>
@@ -96,12 +96,12 @@
                                     modelos de OpenAI.</p>
                                 <div class="flex gap-3 mt-4">
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">React</span>
+                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md bg-primary text-white">React</span>
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">FastAPI</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md">FastAPI</span>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2023</span>
+                            <span class="text-base font-bold text-primary font-display">2023</span>
                         </div>
                     </article>
 
@@ -113,8 +113,8 @@
                             <div
                                 class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
                                 <span
-                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">Live
-                                    Demo</span>
+                                    class="px-8 py-3 bg-primary text-white font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    Project</span>
                             </div>
                         </div>
                         <div class="flex justify-between items-start px-2">
@@ -124,14 +124,13 @@
                                 <p class="text-muted-foreground mt-2 font-body text-lg">App nativa para seguimiento de
                                     entrenamientos.</p>
                                 <div class="flex gap-3 mt-4">
-                                    <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">React
+                                    <span class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md">React
                                         Native</span>
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Firebase</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md ">Firebase</span>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2024</span>
+                            <span class=" text-base font-bold text-primary font-display">2024</span>
                         </div>
                     </article>
 
@@ -144,8 +143,8 @@
                             <div
                                 class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
                                 <span
-                                    class="px-8 py-3 bg-white text-black font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">Live
-                                    Demo</span>
+                                    class="px-8 py-3 bg-primary text-white font-bold rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform">View
+                                    Project</span>
                             </div>
                         </div>
                         <div class="flex justify-between items-start px-2">
@@ -156,42 +155,19 @@
                                     propiedades.</p>
                                 <div class="flex gap-3 mt-4">
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Vue.js</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white  rounded-md">Vue.js</span>
                                     <span
-                                        class="text-xs font-mono py-1 px-3 bg-muted rounded-md text-muted-foreground">Node.js</span>
+                                        class="text-xs font-mono py-1 px-3 bg-primary text-white rounded-md">Node.js</span>
                                 </div>
                             </div>
-                            <span class="text-sm font-bold text-muted-foreground/30 font-display">2023</span>
+                            <span class="text-base font-bold text-primary font-display">2023</span>
                         </div>
                     </article>
 
                 </div>
             </div>
         </section>
-
-        <section class="py-24 border-y border-border/50 bg-card/20 backdrop-blur-sm">
-            <div class="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-20">
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
-                    <div data-animate="fade-up">
-                        <div class="text-4xl md:text-5xl font-bold mb-2">40+</div>
-                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Websites Created</div>
-                    </div>
-                    <div data-animate="fade-up">
-                        <div class="text-4xl md:text-5xl font-bold mb-2">12+</div>
-                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Mobile Apps</div>
-                    </div>
-                    <div data-animate="fade-up">
-                        <div class="text-4xl md:text-5xl font-bold mb-2">99%</div>
-                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Code Quality</div>
-                    </div>
-                    <div data-animate="fade-up">
-                        <div class="text-4xl md:text-5xl font-bold mb-2">5+</div>
-                        <div class="text-sm text-muted-foreground uppercase tracking-widest">Awards Won</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+    
         <section class="py-20 lg:py-32">
             <div class="max-w-4xl mx-auto px-6 text-center">
                 <h2 class="text-4xl md:text-6xl font-bold mb-8" data-animate="fade-up">¿Interesado en trabajar juntos?
