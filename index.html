@@ -18,7 +18,7 @@
 	</a>
 
 	<!-- Navegación compartida (lista semántica) -->
-	<nav id="navbar" class="group fixed top-0 left-0 w-full z-100 bg-gray-900 border-b border-white/10">
+	<nav id="navbar" class="group fixed top-0 left-0 w-full z-100 bg-gray-900 border-b border-white/10 bg-background">
 		<div class="max-w-7xl mx-auto px-4 h-20 flex justify-between items-center">
 			<a href="#/" class="flex items-center gap-3 no-underline">
 				<div class="w-10 h-10 rounded-full bg-primary-500 overflow-hidden shrink-0">
@@ -65,13 +65,13 @@
 	</nav>
 
 	<!-- Área de contenido principal -->
-	<main id="app" class="min-h-screen pt-20 pb-24 flex items-center justify-center" role="main">
+	<main id="app" class="min-h-screen pt-20 pb-24 flex items-center justify-center bg-background" role="main">
 		<!-- Las plantillas de vistas son externas en ./src/views/*.html y son cargadas de forma lazy por el router. -->
 	</main>
 	
 
 	<!-- Pie de página compartido -->
-	<footer class="py-12 px-4 bg-gray-900 border-t border-white/5">
+	<footer class="py-12 px-4 border-t border-white/5 bg-primary-dark">
 		<div class="max-w-7xl mx-auto">
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 				<div class="space-y-4">
@@ -85,8 +85,8 @@
 					<h4 class="text-white font-bold mb-4 text-base uppercase tracking-widest">Navegación</h4>
 					<ul class="space-y-2 text-white text-base">
 						<li><a href="#/" class="hover:underline transition-colors">Inicio</a></li>
-						<li><a href="#/proyecto" class="hover:underline transition-colors">Proyectos</a></li>
-						<li><a href="#/about" class="hover:underline transition-colors">Sobre mí</a></li>
+						<li><a href="#/proyect" class="hover:underline transition-colors">Proyectos</a></li>
+						<li><a href="#/#about" class="hover:underline transition-colors">Sobre mí</a></li>
 					</ul>
 				</div>
 
