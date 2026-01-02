@@ -125,6 +125,9 @@ const animations = {
     initProjectCards(container) {
         // Set initial state explicitly for consistent starting position
         const cards = gsap.utils.toArray(container.querySelectorAll('.project-card'));
+
+        if (cards.length === 0) return;
+        
         gsap.set(cards, { y: 50, opacity: 0 });
 
         ScrollTrigger.batch(container.querySelectorAll('.project-card'), {
@@ -166,9 +169,9 @@ const animations = {
             start: 'top -50',
             onUpdate: (self) => {
                 if (self.direction === 1) { // Scroll hacia abajo
-                    gsap.to(nav, { py: 2, scale: 0.98, duration: 0.3 });
+                    gsap.to(nav, {scale: 0.98, duration: 0.3 });
                 } else { // Scroll hacia arriba
-                    gsap.to(nav, { py: 3, scale: 1, duration: 0.3 });
+                    gsap.to(nav, {scale: 1, duration: 0.3 });
                 }
             }
         });
